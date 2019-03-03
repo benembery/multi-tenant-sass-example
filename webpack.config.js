@@ -3,7 +3,7 @@ const webpack = require("webpack")
 const merge = require("webpack-merge")
 const CssExtract = require("mini-css-extract-plugin")
 
-const tenants = ['example', 'example-two']
+const tenants = ['example', 'example-two', 'example-import-override']
 
 const commonConfig = {
     entry: {
@@ -59,7 +59,5 @@ tenants.forEach(t => {
     console.log("Creating tenant configuration.")
     configurations.push(mergeConfig(t))
 })
-
-console.log(configurations)
 
 module.exports = configurations;
