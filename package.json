@@ -1,0 +1,21 @@
+{
+  "name": "multi-tenant-sass-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/benembery/multi-tenant-sass-example.git",
+  "author": "Ben Embery",
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "build": "yarn && webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "git+https://github.com/benembery/sass-loader.git#feature/configurable-file-extensions",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-merge": "^4.2.1"
+  }
+}
